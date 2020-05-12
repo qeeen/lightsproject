@@ -4,7 +4,7 @@ const trans_time = 120;
 function setup(){
 	createCanvas(1024, 640, WEBGL);
 
-	sequencer = 14;
+	sequencer = 0;
 
 	background(0);
 }
@@ -37,7 +37,6 @@ function draw(){
 			break;
 		case 4:
 			pointLight(0, 255, 0, 0, 0, 0);
-			//pointLight(255, 0, 0, 800*(cos(random()*2*Math.PI)), 0, 800*(cos(random()*2*Math.PI)));
 			pointLight(0, 0, 255, -1200 + (frameCount%trans_time)*6, 0, 0);
 			break;
 		case 5:
